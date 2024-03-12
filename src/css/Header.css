@@ -1,0 +1,50 @@
+.fixed-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white; /* Change the background color to white */
+  z-index: 1000; /* Ensure the header stays above other content */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds a shadow for better visibility */
+}
+
+.header-content {
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  padding: 5px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header-nav {
+  margin-left: auto; /* Move the navigation links to the left side of the screen */
+}
+
+.header-nav a {
+  text-decoration: none;
+  margin: 0 10px; /* Space out the navigation links */
+  color: black; /* Adjust the color to match your design */
+  font-size: 16px; /* Adjust the font size as needed */
+  /* Add additional styles for your navigation links if needed */
+}
+
+.header-nav a:hover {
+  text-decoration: underline; /* Style for hover state */
+}
+
+/* Use media queries to make the header responsive */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+  
+  .header-nav {
+    margin-top: 10px;
+  }
+
+  .header-nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}

@@ -1,0 +1,130 @@
+.timeline-container {
+    position: relative;
+    max-width: 900px;
+    margin: 200px auto; /* Increased top and bottom margin */
+    padding: 200px 200px; /* Increased top padding to prevent cutting off content */
+    font-family: 'Times new roman', sans-serif;
+}
+  .timeline-event {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 30px;
+    position: relative;
+  }
+  
+  .timeline-event-left {
+    justify-content: flex-start;
+  }
+  
+  .timeline-event-content {
+    border-radius: 6px;
+    padding: 15px;
+    position: relative;
+    width: 40%;
+  }
+  
+  .content-left {
+    background-color:red
+  }
+  
+  .content-right {
+    background-color: blue
+  }
+  
+  .timeline-event-right .timeline-event-content:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-width: 15px 0 15px 15px;
+    border-color: transparent transparent transparent #fde4d5;
+  }
+  
+  .timeline-event-left .timeline-event-content:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #d5e4fe transparent transparent;
+  }
+  
+  .timeline-event-year {
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .timeline-event-left .timeline-event-year {
+    right: 100%;
+    margin-right: 20px;
+  }
+  
+  .timeline-event-right .timeline-event-year {
+    left: 100%;
+    margin-left: 20px;
+  }
+  
+  .timeline-event-left .timeline-event-circle {
+    right: -13px;
+  }
+  
+  .timeline-event-right .timeline-event-circle {
+    left: -13px;
+  }
+  
+  /* Vertical line */
+  .timeline-container:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #050404;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  @media screen and (max-width: 599px) {
+    .timeline-event-content {
+      width: 70%;
+    }
+  
+    .timeline-event {
+      padding-top: 50px;
+    }
+  
+    .timeline-event-left,
+    .timeline-event-right {
+      justify-content: center;
+    }
+  
+    .timeline-event-right .timeline-event-content:before,
+    .timeline-event-left .timeline-event-content:before {
+      content: none;
+    }
+  
+    .timeline-event-left .timeline-event-year,
+    .timeline-event-right .timeline-event-year {
+      position: static;
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .timeline-event-circle {
+      position: static;
+      display: block;
+      margin: 10px auto;
+    }
+  
+    /* Hide the vertical line */
+    .timeline-container:before {
+      display: none;
+    }
+  }
+  

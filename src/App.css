@@ -1,0 +1,87 @@
+.page-one-content {
+  padding: 20px; /* Adds some padding around your content */
+  max-width: 800px; /* Limits the maximum width of the content for readability */
+  margin: auto; /* Centers the content horizontally */
+  line-height: 1.6; /* Improves readability of the paragraph text */
+}
+
+.text {
+  color: #fbfcfd; /* Sets a nice blue color for the heading */
+  margin-bottom: 20px; /* Adds some space between the heading and the paragraph */
+  text-align: center; /* Centers the heading text */
+}
+
+.page-one-content p {
+  background-color: gray;/* A light background color for the paragraph */
+  padding: 15px; /* Adds padding inside the paragraph for better readability */
+  border-radius: 5px; /* Slightly rounds the corners of the paragraph background */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* A subtle shadow for some depth */
+  border: 5px solid #dcdcdc;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+.profile-page {
+  background-color: #F9C6C9;
+  color: white;
+  font-family: 'Times new Roman';/* Choose a font that matches the design */
+  padding: 20px;
+  height: 100vh; /* New style */
+  width: 100vw; /* New style */
+  box-sizing: border-box; /* Ensures padding doesn't affect overall dimensions */
+  display: flex; /* Using flexbox for inner content alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 150px; /* Adjust as necessary */
+  height: 150px; /* Adjust as necessary */
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 20px; /* Adds some space between the photo and the header text */
+}
+
+.next-page-arrow {
+  position: fixed;
+  right: 20px; /* Adjust based on your design */
+  top: 50%;
+  transform: translateY(-50%); /* Centers the arrow vertically */
+  cursor: pointer;
+  font-size: 24px; /* Adjust the size as necessary */
+  z-index: 100; /* Ensures it's above other content */
+}
+
+
+
+.page-content {
+  /* Apply a transition effect */
+  transition: transform 0.5s ease-in-out;
+}
+
+.page-content-enter {
+  opacity: 0;
+}
+.page-content-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.page-content-exit {
+  opacity: 1;
+}
+.page-content-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
