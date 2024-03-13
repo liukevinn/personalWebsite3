@@ -1,10 +1,26 @@
 .timeline-container {
-    position: relative;
-    max-width: 900px;
-    margin: 200px auto; /* Increased top and bottom margin */
-    padding: 200px 200px; /* Increased top padding to prevent cutting off content */
-    font-family: 'Times new roman', sans-serif;
+    padding-top: 125%;
+    padding-bottom: 2%;
+    padding-left: 15%; /* Adjusted padding */
+    padding-right: 15%; /* Adjusted padding */
+    background-color: pink;
+    font-family: "Georgia";
+  }
+.header {
+  padding-left: 40%; /* Adjusted padding */
+  padding-right: 40%; /* Adjusted padding */
+  text-align: center; /* Center align the text */
+  padding-top: 20px; /* Add padding from the top */
+  position: relative; /* Set position to relative */
+  z-index: 1; /* Bring it to the front */
+  background-color: gray;
+  border-radius: 6px;
+  border: 2px solid white; /* Add white border */
+  padding: 15px; /* Adjust padding */
 }
+
+  
+  
   .timeline-event {
     display: flex;
     justify-content: flex-end;
@@ -20,15 +36,17 @@
     border-radius: 6px;
     padding: 15px;
     position: relative;
-    width: 40%;
+    width: 30%; /* Adjusted width */
   }
   
   .content-left {
-    background-color:red
+    background-color: gray;
+    border: 2px solid white; /* Border around the box */
   }
   
   .content-right {
-    background-color: blue
+    background-color: gray;
+    border: 2px solid white; /* Border around the box */
   }
   
   .timeline-event-right .timeline-event-content:before {
@@ -39,7 +57,7 @@
     transform: translateY(-50%);
     border-style: solid;
     border-width: 15px 0 15px 15px;
-    border-color: transparent transparent transparent #fde4d5;
+    border-color: transparent transparent transparent white;
   }
   
   .timeline-event-left .timeline-event-content:before {
@@ -50,7 +68,7 @@
     transform: translateY(-50%);
     border-style: solid;
     border-width: 15px 15px 15px 0;
-    border-color: transparent #d5e4fe transparent transparent;
+    border-color: transparent white;
   }
   
   .timeline-event-year {
@@ -84,7 +102,7 @@
     position: absolute;
     width: 4px;
     background-color: #050404;
-    top: 0;
+    top: 0px; /* Adjusted top position */
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);

@@ -11,6 +11,7 @@ const PageOne = () => (
       <strong>I was born in Milwaukee, Wisconsin in 2005. In 2023, I moved to Durham, North Carolina to attend Duke University. In my free time, I enjoy playing piano, kicking soccer balls, and watching the NBA. I'm super excited to learn and grow, and am open to any opportunities where I can develop my skills. Feel free to connect with me on LinkedIn, or contact me!</strong>
     </p>
     <SkillsSection/>
+    
 
   </div>
 );
@@ -18,8 +19,7 @@ const PageOne = () => (
 
 const PageTwo = () =>
 <div>
-  <h1>Here's what I've been up to!</h1>
-  <h1 className = "title">Timeline</h1>
+<h1>Here's what I've been up to!</h1>
         <Timeline/>
 </div>;
 
