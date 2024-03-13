@@ -17,10 +17,6 @@
   margin: auto;
 }
 
-.header-nav {
-  margin-left: auto; /* Move the navigation links to the left side of the screen */
-}
-
 .header-nav a {
   text-decoration: none;
   margin: 0 10px; /* Space out the navigation links */

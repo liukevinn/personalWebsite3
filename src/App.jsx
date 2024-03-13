@@ -3,6 +3,7 @@ import './App.css'; // Assuming your CSS is in App.css
 import Header from './Header';
 import SkillsSection from './SkillsSection';
 import Timeline from './Timeline';
+import Dropdown from './Dropdown';
 
 const PageOne = () => (
   <div className="page-one-content">
@@ -20,7 +21,7 @@ const PageOne = () => (
 const PageTwo = () =>
 <div>
 <h1>Here's what I've been up to!</h1>
-        <Timeline/>
+<Timeline/>
 </div>;
 
 const App = () => {
@@ -41,7 +42,7 @@ const App = () => {
 
   return (
     <div className="profile-page">
-      <Header />
+      <Dropdown/>
       {currentPage === -1 && (
         <>
           <div className="profile-header">
