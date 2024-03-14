@@ -5,14 +5,14 @@
 }
 
 .header {
-    display: inline-block;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: block; /* Change to block element to occupy full width */
+    text-align: center; /* Center the text horizontally */
     padding: 20px; /* Adjust padding as needed */
     background-color: white; /* Background color */
     border-radius: 20px; /* Rounded corners */
     color: black; /* Text color */
-}
+  }
+  
 
 
 

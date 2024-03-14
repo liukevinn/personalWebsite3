@@ -59,10 +59,27 @@ h1{
 }
 
 .profile-photo {
-  width: 150px; /* Adjust as necessary */
-  height: 150px; /* Adjust as necessary */
+  width: 200px; /* Adjust as necessary */
+  height: 200px; /* Adjust as necessary */
   border-radius: 50%;
   border: 5px solid white;
   margin-bottom: 20px; /* Adds some space between the photo and the header text */
 }
+
+.back-to-top {
+  font-family: arvo;
+  bottom: 20px;
+  right: 20px;
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-to-top:hover {
+  background-color: #5b93cf;
+}
+
 
