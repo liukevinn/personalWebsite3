@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div className="app-container">
       <div className="profile-header">
-        <img src="src/images/profilePic2.png" alt="Profile" className="profile-photo" />
+        <img src="src/images/picsForWebsite/profilePic2.png" alt="Profile" className="profile-photo" />
         <h1 className="h1" id="getToKnowMe">hey,&nbsp;&nbsp;i'm kevin.</h1>
       </div>
       
