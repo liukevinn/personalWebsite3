@@ -28,7 +28,7 @@ const TimelineEvent = ({ event }) => {
 const Timeline = () => {
   return (
     <div className="timeline-container">
-      <h1 className='header'>here's an outline of my life.</h1>
+      <h1 className='header'>here's an outline of my life . . .</h1>
       {events.map(event => (
         <TimelineEvent event={event} key={event.id} />
       ))}

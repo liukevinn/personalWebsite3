@@ -7,13 +7,12 @@ const Dropdown = () => {
       <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet" />
       <nav role="navigation" className="primary-navigation">
         <ul>
-          <li><a href="#">Home</a></li>
           <li>
-            <a href="#">Work</a>
+            <a href="#">Shortcuts</a>
             <ul className="dropdown">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Get to know me</a></li>
+              <li><a href="#getToKnowMe">Get to know me</a></li>
               <li><a href="#">Timeline</a></li>
+              <li><a href="#">Pictures</a></li>
             </ul>
           </li>
           <li>

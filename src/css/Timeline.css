@@ -1,55 +1,51 @@
 .timeline-container {
-    padding-top: 125%;
-    padding-bottom: 2%;
-    padding-left: 15%; /* Adjusted padding */
-    padding-right: 15%; /* Adjusted padding */
-    background-color: pink;
-    font-family: "Georgia";
-  }
-.header {
-  padding-left: 40%; /* Adjusted padding */
-  padding-right: 40%; /* Adjusted padding */
-  text-align: center; /* Center align the text */
-  padding-top: 20px; /* Add padding from the top */
-  position: relative; /* Set position to relative */
-  z-index: 1; /* Bring it to the front */
-  background-color: gray;
-  border-radius: 6px;
-  border: 2px solid white; /* Add white border */
-  padding: 15px; /* Adjust padding */
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: arvo;
 }
 
-  
-  
-  .timeline-event {
+.header {
+    display: inline-block;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Adjust padding as needed */
+    background-color: white; /* Background color */
+    border-radius: 20px; /* Rounded corners */
+    color: black; /* Text color */
+}
+
+
+
+.timeline-event {
     display: flex;
     justify-content: flex-end;
     padding: 10px 30px;
     position: relative;
-  }
-  
-  .timeline-event-left {
+    color: black; /* Set text color */
+}
+
+.timeline-event-left {
     justify-content: flex-start;
-  }
-  
-  .timeline-event-content {
+}
+
+.timeline-event-content {
     border-radius: 6px;
     padding: 15px;
     position: relative;
-    width: 30%; /* Adjusted width */
-  }
-  
-  .content-left {
-    background-color: gray;
-    border: 2px solid white; /* Border around the box */
-  }
-  
-  .content-right {
-    background-color: gray;
-    border: 2px solid white; /* Border around the box */
-  }
-  
-  .timeline-event-right .timeline-event-content:before {
+    width: 45%;
+    color: black; /* Set text color */
+    background-color: white; /* Fill boxes with white */
+}
+
+.content-left {
+    border: 2px solid white;
+}
+
+.content-right {
+    border: 2px solid white;
+}
+
+.timeline-event-right .timeline-event-content:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -58,9 +54,9 @@
     border-style: solid;
     border-width: 15px 0 15px 15px;
     border-color: transparent transparent transparent white;
-  }
-  
-  .timeline-event-left .timeline-event-content:before {
+}
+
+.timeline-event-left .timeline-event-content:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -69,80 +65,67 @@
     border-style: solid;
     border-width: 15px 15px 15px 0;
     border-color: transparent white;
-  }
-  
-  .timeline-event-year {
+}
+
+.timeline-event-year {
     font-weight: bold;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-  }
-  
-  .timeline-event-left .timeline-event-year {
+    color: black; /* Set text color */
+}
+
+.timeline-event-left .timeline-event-year {
     right: 100%;
     margin-right: 20px;
-  }
-  
-  .timeline-event-right .timeline-event-year {
+}
+
+.timeline-event-right .timeline-event-year {
     left: 100%;
     margin-left: 20px;
-  }
-  
-  .timeline-event-left .timeline-event-circle {
+}
+
+.timeline-event-left .timeline-event-circle {
     right: -13px;
-  }
-  
-  .timeline-event-right .timeline-event-circle {
+}
+
+.timeline-event-right .timeline-event-circle {
     left: -13px;
-  }
-  
-  /* Vertical line */
-  .timeline-container:before {
-    content: '';
-    position: absolute;
-    width: 4px;
-    background-color: #050404;
-    top: 0px; /* Adjusted top position */
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  @media screen and (max-width: 599px) {
+}
+
+@media screen and (max-width: 599px) {
     .timeline-event-content {
-      width: 70%;
+        width: 70%;
     }
-  
+
     .timeline-event {
-      padding-top: 50px;
+        padding-top: 50px;
     }
-  
+
     .timeline-event-left,
     .timeline-event-right {
-      justify-content: center;
+        justify-content: center;
     }
-  
+
     .timeline-event-right .timeline-event-content:before,
     .timeline-event-left .timeline-event-content:before {
-      content: none;
+        content: none;
     }
-  
+
     .timeline-event-left .timeline-event-year,
     .timeline-event-right .timeline-event-year {
-      position: static;
-      display: block;
-      margin-bottom: 10px;
+        position: static;
+        display: block;
+        margin-bottom: 5px;
     }
-  
+
     .timeline-event-circle {
-      position: static;
-      display: block;
-      margin: 10px auto;
+        position: static;
+        display: block;
+        margin: 5px auto;
     }
-  
-    /* Hide the vertical line */
+
     .timeline-container:before {
-      display: none;
+        display: none;
     }
-  }
-  
+}

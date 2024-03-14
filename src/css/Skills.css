@@ -1,37 +1,38 @@
-
 .skills-section {
-    font-family: 'Georgia', sans-serif; /* You can change the font-family as per your design */
-    max-width: 600px; /* Adjust the width as needed */
-    margin: 0 auto; /* Center align the skills section */
-    padding: 20px; /* Padding around the section */
-  }
-  
-  .skills-section h2 {
+    font-family: arvo;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    color: black; /* Set text color */
+}
+
+.skills-section h2 {
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .skills-category h3 {
+    color: black; /* Set text color */
+}
+
+.skills-category h3 {
     margin-top: 15px;
     margin-bottom: 10px;
-  }
-  
-  .skills-list {
+    color: black; /* Set text color */
+}
+
+.skills-list {
     display: flex;
-    flex-wrap: wrap; /* Allows skill tags to wrap to the next line */
-    gap: 10px; /* Spacing between skill tags */
-    justify-content: center; /* Center align the skill tags */
-  }
-  
-  .skill {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skill {
     display: inline-block;
-    background-color: gray
-    ; /* Light grey background */
-    padding: 8px 15px; /* Padding inside the skill tags */
-    border-radius: 15px; /* Rounded corners for the skill tags */
-    border: 1px solid #d1d1d1; /* Border for the skill tags */
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    font-size: 0.9rem; /* Smaller font size for the skill tags */
-    font-weight: bold; /* Bold font for the skill text */
-  }
-  
+    background-color: lightblue; /* Fill boxes with white */
+    padding: 8px 15px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: black; /* Set text color */
+}
