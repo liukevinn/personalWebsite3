@@ -34,9 +34,9 @@ const Dropdown = () => {
           <li>
             <a href="#contact" onClick={(e) => handleNavigation(e, 'contact')}>Contact/Socials</a>
             <ul className="dropdown">
-              <li><a href="#linkedin" onClick={(e) => handleNavigation(e, 'linkedin')}>Linkedin</a></li>
-              <li><a href="#instagram" onClick={(e) => handleNavigation(e, 'instagram')}>Instagram</a></li>
-              <li><a href="#github" onClick={(e) => handleNavigation(e, 'github')}>Github</a></li>
+              <li><a onClick={(e) => handleNavigation(e, 'linkedin')}>Linkedin</a></li>
+              <li><a onClick={(e) => handleNavigation(e, 'instagram')}>Instagram</a></li>
+              <li><a  onClick={(e) => handleNavigation(e, 'github')}>Github</a></li>
             </ul>
           </li>
         </ul>
