@@ -24,19 +24,19 @@ const Dropdown = () => {
       <nav role="navigation" className="primary-navigation">
         <ul>
           <li>
-            <a href="#getToKnowMe" onClick={(e) => handleNavigation(e, 'getToKnowMe')}>Shortcuts</a>
+          <a href="" onClick={(e) => handleNavigation(e, 'contact')}>Shortcuts</a>
             <ul className="dropdown">
-              <li><a href="#getToKnowMe" onClick={(e) => handleNavigation(e, 'getToKnowMe')}>Get to know me</a></li>
+             
               <li><a href="#timeLine" onClick={(e) => handleNavigation(e, 'timeLine')}>Timeline</a></li>
               <li><a href="#pictures" onClick={(e) => handleNavigation(e, 'pictures')}>Pictures</a></li>
             </ul>
           </li>
           <li>
-            <a href="#contact" onClick={(e) => handleNavigation(e, 'contact')}>Contact/Socials</a>
+            <a href=""onClick={(e) => handleNavigation(e, 'contact')}>Contact/Socials</a>
             <ul className="dropdown">
-              <li><a onClick={(e) => handleNavigation(e, 'linkedin')}>Linkedin</a></li>
-              <li><a onClick={(e) => handleNavigation(e, 'instagram')}>Instagram</a></li>
-              <li><a  onClick={(e) => handleNavigation(e, 'github')}>Github</a></li>
+              <li><a href = "" onClick={(e) => handleNavigation(e, 'linkedin')}>Linkedin</a></li>
+              <li><a href = "" onClick={(e) => handleNavigation(e, 'instagram')}>Instagram</a></li>
+              <li><a  href = "" onClick={(e) => handleNavigation(e, 'github')}>Github</a></li>
             </ul>
           </li>
         </ul>

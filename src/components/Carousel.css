@@ -3,8 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Set to 100% to occupy the entire width of the parent container */
-    height: 400px;
+    width: 600px; /* Set to 100% to occupy the entire width of the parent container */
+    height:400px;
     margin-top: 0;
   }
   
